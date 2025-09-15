@@ -1,0 +1,56 @@
+[
+    {
+        "model": "account.CustomUser",
+        "pk": 1,
+        "fields": {
+            "email": "testuser@gmail.com",
+            "password": "testpassword",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product.Category",
+        "pk": 1,
+        "fields": {
+            "name": "Cake",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product.Product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "sku": "ABC123",
+            "name": "Cheese Cake",
+            "description": "A cheese cake.",
+            "is_active": true
+        }
+    },
+    {
+        "model": "product.ProductVariant",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "weight": 1000,
+            "price": "19.99"
+        }
+    },
+    {
+        "model": "cart.Cart",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "session_id": "testsessionid"
+        }
+    },
+    {
+        "model": "cart.CartItem",
+        "pk": 1,
+        "fields": {
+            "cart": 1,
+            "product_variant": 1,
+            "quantity": 2
+        }
+    }
+]

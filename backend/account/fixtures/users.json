@@ -1,0 +1,24 @@
+[
+    {
+        "model": "account.customuser",
+        "pk": 1,
+        "fields": {
+            "email": "existinguser@example.com",
+            "role": "admin",
+            "first_name": "Existing",
+            "last_name": "User",
+            "password": "pbkdf2_sha256$870000$Ne8gEoh0fxPZQsqpf4gSjc$aOMNmgeXRLjMyFTstIssEHEcGt0UYN94lD4M/LMsFvA="
+        }
+    },
+    {
+        "model": "account.customUser",
+        "pk": 2,
+        "fields": {
+            "email": "testuser@example.com",
+            "password": "pbkdf2_sha256$870000$Ne8gEoh0fxPZQsqpf4gSjc$aOMNmgeXRLjMyFTstIssEHEcGt0UYN94lD4M/LMsFvA=",
+            "first_name": "Test",
+            "last_name": "User",
+            "role": "worker"
+        }
+    }
+]
